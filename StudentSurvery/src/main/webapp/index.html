@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Student Survey Form</title>
+  </head>
+  <body>
+    <form action="index.html" method="post">
+      <h1>Student Survey Form</h1>
+
+      <fieldset>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="first_name" name="student_firstN" />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="last_name" name="student_lastN" />
+
+        <label for="streetAddress">Street Address:</label>
+        <input type="text" id="street_address" name="student_street" />
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="student_city" />
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="student_state" />
+
+        <label for="zip">Zip:</label>
+        <input type="text" id="zip" name="student_zip" />
+
+        <label for="telephone">Telephone Number:</label>
+        <input type="tel" id="telephone" name="student_telephone" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="student_email" />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="student_date" />
+
+        <label>What do you like about the campus:</label>
+        <input
+          type="checkbox"
+          id="stduents"
+          value="like_stud"
+          name="campus_favourites"
+        /><label class="light" for="students">Students</label><br />
+        <input
+          type="checkbox"
+          id="location"
+          value="like_location"
+          name="user_interest"
+        /><label class="light" for="location">Location</label><br />
+        <input
+          type="checkbox"
+          id="campus"
+          value="like_campus"
+          name="campus_favourites"
+        /><label class="light" for="campus">Campus</label><br />
+        <input
+          type="checkbox"
+          id="atmosphere"
+          value="like_atmosphere"
+          name="campus_favourites"
+        /><label class="light" for="atmosphere">Atmosphere</label><br />
+        <input
+          type="checkbox"
+          id="dorm_rooms"
+          value="like_dorm_rooms"
+          name="campus_favourites"
+        /><label class="light" for="dorm_rooms">Dorm Rooms</label><br />
+        <input
+          type="checkbox"
+          id="sports"
+          value="like_sports"
+          name="campus_favourites"
+        /><label class="light" for="sports">Sports</label><br />
+        <br />
+        <label>Why are you interested in this university:</label>
+        <input
+          type="radio"
+          id="friends"
+          value="friends"
+          name="student_interest"
+        /><label for="friends" class="light">Friends</label><br />
+        <input
+          type="radio"
+          id="television"
+          value="television"
+          name="student_interest"
+        /><label for="television" class="light">Television</label><br />
+        <input
+          type="radio"
+          id="internet"
+          value="internet"
+          name="student_interest"
+        /><label for="internet" class="light">Internet</label><br />
+        <input
+          type="radio"
+          id="other"
+          value="other"
+          name="student_interest"
+        /><label for="other" class="light">Other</label><br />
+        <br />
+        <label for="recommend"
+          >How likely are you to recommend the university:</label
+        >
+        <select id="recommend" name="student_recommendation">
+          <option value="very_likely">Very Likely</option>
+          <option value="likely">Likely</option>
+          <option value="Unlikely">Unlikely</option>
+        </select>
+
+        <label for="raffle">
+          Raffle (Enter at least ten comma separated numbers ranging from 1
+          through 100):
+        </label>
+
+        <textarea name="raffle" id="raffle"> </textarea>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="student_comments"></textarea>
+        <button type="submit">Submit</button>
+        <button type="submit">Cancel</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
